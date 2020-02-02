@@ -351,6 +351,7 @@ html {
   flex-direction: column;
   position: relative;
 }
+
 .card {
   position: relative;
   width: 255px;
@@ -377,12 +378,19 @@ html {
 
 .interactive {
   position: absolute;
-  /*left: 100%;*/
   display: flex;
   flex-wrap: wrap;
   width: 168px;
   height: 108px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+/*.card:hover .interactive,
+.card:focus .interactive {
+  display: flex;
+}*/
 
 .interactive button {
   display: inline-flex;
@@ -452,7 +460,6 @@ html {
 .interactive button:focus {
   background-color: #1abc9c;
 }
-
 
 .gallery-items:nth-child(4n) {
   margin-right: 0;
