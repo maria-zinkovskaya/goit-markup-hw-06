@@ -378,6 +378,7 @@ html {
 
 .interactive {
   position: absolute;
+  opacity: 0;
   display: flex;
   flex-wrap: wrap;
   width: 168px;
@@ -387,10 +388,9 @@ html {
   transform: translate(-50%, -50%);
 }
 
-/*.card:hover .interactive,
-.card:focus .interactive {
-  display: flex;
-}*/
+.gallery-link:hover .interactive {
+  opacity: 1;
+}
 
 .interactive button {
   display: inline-flex;
